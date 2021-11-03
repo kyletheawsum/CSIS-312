@@ -1,19 +1,19 @@
+package stevens.week.two;
+
 // Fig. 9.10: CommissionEmployee.java
 // CommissionEmployee class uses methods to manipulate its 
 // private instance variables.
-public class CommissionEmployee
+public class CommissionEmployee extends Employee
 {
-   private final String firstName;                              
-   private final String lastName;                               
-   private final String socialSecurityNumber;                   
    private double grossSales; // gross weekly sales       
    private double commissionRate; // commission percentage
 
    // five-argument constructor
-   public CommissionEmployee(String firstName, String lastName, 
-      String socialSecurityNumber, double grossSales, 
+   public CommissionEmployee(String fName, String lName, 
+      String ssn, double grossSales, 
       double commissionRate)
    {
+	  super(fName, lName, ssn);
       // implicit call to Object constructor occurs here
 
       // if grossSales is invalid throw exception
@@ -26,30 +26,9 @@ public class CommissionEmployee
          throw new IllegalArgumentException(
             "Commission rate must be > 0.0 and < 1.0");
 
-      this.firstName = firstName;                                    
-      this.lastName = lastName;                                    
-      this.socialSecurityNumber = socialSecurityNumber;         
       this.grossSales = grossSales;
       this.commissionRate = commissionRate;
    } // end constructor 
-
-   // return first name
-   public String getFirstName()
-   {
-      return firstName;
-   }
-
-   // return last name
-   public String getLastName()
-   {
-      return lastName;
-   }
-
-   // return social security number
-   public String getSocialSecurityNumber()
-   {
-      return socialSecurityNumber;
-   } 
 
    // set gross sales amount
    public void setGrossSales(double grossSales)
@@ -93,9 +72,7 @@ public class CommissionEmployee
    @Override 
    public String toString()
    {
-      return String.format("%s: %s %s%n%s: %s%n%s: %.2f%n%s: %.2f", 
-         "commission employee", getFirstName(), getLastName(), 
-         "social security number", getSocialSecurityNumber(), 
+      return super.toString() + String.format("%s: %.2f%n%s: %.2f", 
          "gross sales", getGrossSales(), 
          "commission rate", getCommissionRate());
    } 

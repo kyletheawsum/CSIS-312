@@ -1,3 +1,5 @@
+package stevens.week.two; 
+
 // BasePlusCommissionEmployeeTest.java
 // Testing class BasePlusCommissionEmployee.
 
@@ -5,6 +7,8 @@ public class BasePlusCommissionEmployeeTest
 {
    public static void main(String[] args) 
    {
+	   
+	  System.out.println("Kyle Stevens - Assignment 2\n");
       // instantiate CommissionEmployee object
       CommissionEmployee employee1 = new CommissionEmployee(
          "Sue", "Jones", "222-22-2222", 10000, .06);      

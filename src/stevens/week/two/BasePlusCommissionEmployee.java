@@ -1,3 +1,5 @@
+package stevens.week.two;
+
 // Fig. 9.11: BasePlusCommissionEmployee.java
 // BasePlusCommissionEmployee class inherits from CommissionEmployee 
 // and accesses the superclass’s private data via inherited 
