@@ -1,5 +1,10 @@
 package stevens.week.two;
 
+/**
+ * Employee - superclass 
+ * @author Kyle Stevens
+ *
+ */
 public class Employee {
 	
 	private String firstName;
