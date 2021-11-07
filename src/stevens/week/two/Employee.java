@@ -1,7 +1,7 @@
 package stevens.week.two;
 
 /**
- * Employee - superclass 
+ * Employee - superclass containing employee name and SSN
  * @author Kyle Stevens
  *
  */
