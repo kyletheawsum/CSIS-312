@@ -7,6 +7,8 @@ public class PayrollSystemTest
 {
    public static void main(String[] args) 
    {
+	   System.out.println("Kyle Stevens - Assignment 3\n");
+	   
       // create subclass objects
       SalariedEmployee salariedEmployee = 
          new SalariedEmployee("John", "Smith", "111-11-1111", 800.00);
