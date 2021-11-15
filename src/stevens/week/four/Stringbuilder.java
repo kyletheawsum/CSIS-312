@@ -19,15 +19,20 @@ public class Stringbuilder {
 		String capitalizedArticle = ARTICLES[r.nextInt(4)].toString();
 		capitalizedArticle = capitalizedArticle.substring(0, 1).toUpperCase() + capitalizedArticle.substring(1);
 		sentence.append(capitalizedArticle).append(" ").toString();
-		// append random article
+		
+		// append random noun
 		sentence.append(NOUNS[r.nextInt(4)]).append(" ");
-		// append random article
+		
+		// append random verb
 		sentence.append(VERBS[r.nextInt(4)]).append(" ");
-		// append random article
+		
+		// append random preposition
 		sentence.append(PREPOSITIONS[r.nextInt(4)]).append(" ");
+		
 		// append random article
 		sentence.append(ARTICLES[r.nextInt(4)]).append(" ");
-		// append random article
+		
+		// append random noun
 		sentence.append(NOUNS[r.nextInt(4)]).append(".");
 
 		return sentence;
